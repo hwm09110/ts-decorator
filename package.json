@@ -1,0 +1,27 @@
+{
+  "name": "ts-decorators",
+  "version": "1.0.0",
+  "description": "ts-decorators",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc index.ts --target es5 --experimentalDecorators & node index.js",
+    "dev": "webpack-dev-server --progress --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "watch": "tsc index.ts --target es5 --experimentalDecorators -w"
+  },
+  "author": "hwm",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "html-webpack-plugin": "^5.3.2",
+    "ts-loader": "^9.2.4",
+    "typescript": "^4.3.5",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "core-js": "^3.16.0"
+  }
+}
